@@ -1509,3 +1509,119 @@ address {
   }
 
 }
+/** add AI */
+
+  .search-btn {
+    background-color: #2c3e50; /* Dark theme background */
+    color: rgb(223, 232, 229); /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 30px; /* Rounded edges */
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 18px; /* Slightly larger font */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions */
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center-align icon and text */
+  }
+
+  .search-btn:hover {
+    background-color: #34495e; /* Slightly lighter on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+
+  .search-btn:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0px 0px 0px 3px aquamarine; /* Focus ring */
+  }
+
+  .icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 20px; /* Size of the icon */
+  }
+
+  a {
+    text-decoration: none; /* Remove underline from link */
+  }
+/* Card Container */
+.popular-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.popular-card:hover {
+  transform: translateY(-10px); /* Lift on hover */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Image Animation */
+.card-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.popular-card:hover .card-img img {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Content Animation */
+.card-content {
+  padding: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.popular-card:hover .card-content {
+  opacity: 0.95; /* Slight fade on hover */
+}
+
+/* Title, Subtitle, Text */
+.card-title a,
+.card-subtitle a {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-title a:hover,
+.card-subtitle a:hover {
+  color: aquamarine;
+}
+
+/* Icon Styling */
+.card-rating ion-icon {
+  color: #f39c12; /* Star color */
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Animation on star icons */
+.popular-card:hover .card-rating ion-icon {
+  transform: scale(1.2); /* Enlarge stars on hover */
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #34495e;
+  transform: translateY(-5px);
+}

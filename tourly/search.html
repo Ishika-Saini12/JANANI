@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Destination</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+  <div class="search-container">
+    <h1>Search for Vendors by Destination</h1>
+    <div class="form-group">
+      <label for="search-destination">Destination Name</label>
+      <input type="text" id="search-destination" placeholder="Enter destination name">
+    </div>
+    <button id="search-btn">Search</button>
+  </div>
+
+  <script type="module">
+    // When search button is clicked, redirect to results page with query parameter
+    document.getElementById("search-btn").addEventListener("click", function() {
+      const destination = document.getElementById("search-destination").value;
+      if (destination) {
+        // Redirect to results page with the destination in the URL query parameters
+        // window.location.href = `results.html?destination=${encodeURIComponent(destination)}`;
+        window.location.href = `results.html?destinationName=${encodeURIComponent(destination)}`;
+
+      } else {
+        alert("Please enter a destination.");
+      }
+    });
+  </script>
+</body>
+</html>

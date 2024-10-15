@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <title>Learn</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0A74DA;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #0a418a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 0 20px 20px 20px;
+            color: #555;
+        }
+
+        /* Specific Section Spacing */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #0A74DA;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #084a8a;
+        }
+
+        /* Link Styling */
+        a {
+            text-decoration: none;
+        }
+
+        /* Centering the button */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size:

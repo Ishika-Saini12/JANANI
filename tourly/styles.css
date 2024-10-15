@@ -1,0 +1,198 @@
+/* Body styling with background color */
+body {
+    font-family: Arial, sans-serif;
+    background: #E0F7FA; /* Light sky-blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Windmill Container */
+  .windmill-container {
+    position: absolute;
+    bottom: 50px;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* Windmill Tower */
+  .tower {
+    width: 30px;
+    height: 300px;
+    background: #4A4A4A; /* Dark gray for the tower */
+    border-radius: 5px;
+    position: relative;
+  }
+  
+/* Windmill blades container for rotating effect */
+.blades {
+    position: absolute;
+    top: -150px; /* Adjust top positioning for larger blades */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;  /* Increased width */
+    height: 300px; /* Increased height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateBlades 4s linear infinite; /* Constant rotation */
+  }
+  
+  /* Single blade styling */
+  .blade {
+    width: 300px;  /* Triple the width of the blades */
+    height: 60px;  /* Triple the height of the blades */
+    background: #FF9800; /* Orange color for the blades */
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Blade positioning */
+  .blade:nth-child(1) {
+    transform: rotate(0deg);
+  }
+  
+  .blade:nth-child(2) {
+    transform: rotate(120deg);
+  }
+  
+  .blade:nth-child(3) {
+    transform: rotate(240deg);
+  }
+  
+  /* Windmill blade rotation */
+  @keyframes rotateBlades {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+  
+  
+  /* Optional CSS for the form and buttons */
+  .container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10; /* Ensures that the container is above the windmill */
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .response-box {
+    background-color: rgba(248, 249, 250, 0.8); /* Semi-transparent response box */
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #333;
+    line-height: 1.6;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  /* Bird Container */
+.bird-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1; /* Set behind your form elements */
+}
+
+/* General Bird Styles */
+.bird {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('cloud.jpeg'); /* You can use your bird image here */
+    background-size: cover;
+    opacity: 0.8;
+    animation: fly 15s linear infinite;
+}
+
+/* Define the different birds' starting positions */
+.bird1 {
+    top: 20%;
+    left: -50px;
+    animation-duration: 12s;
+}
+
+.bird2 {
+    top: 40%;
+    left: -50px;
+    animation-duration: 14s;
+}
+
+.bird3 {
+    top: 60%;
+    left: -50px;
+    animation-duration: 16s;
+}
+
+.bird4 {
+    top: 80%;
+    left: -50px;
+    animation-duration: 18s;
+}
+
+/* Animation for birds flying across the screen */
+@keyframes fly {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    50% {
+        transform: translateX(50vw) translateY(-30px) scale(1.1);
+    }
+    100% {
+        transform: translateX(100vw) scale(1);
+    }
+}

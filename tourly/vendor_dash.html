@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <nav class="sidebar">
+      <h2>Vendor Dashboard</h2>
+      <ul>
+        <li><a href="#add-destination">Add Destination</a></li>
+        <li><a href="#added-destinations">My Destinations</a></li>
+        <li><a href="#profile">Profile</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <!-- Add Destination Section -->
+      <section id="add-destination" class="section">
+        <h3>Add New Destination</h3>
+
+        <!-- Vendor's Name -->
+        <div class="form-group">
+          <label for="vendor-name">Vendor's Name</label>
+          <input type="text" id="vendor-name" placeholder="Enter vendor's name" required>
+        </div>
+
+        <!-- Vendor's ID -->
+        <div class="form-group">
+          <label for="vendor-id">Vendor's ID</label>
+          <input type="text" id="vendor-id" placeholder="Enter vendor's ID" required>
+        </div>
+
+        <!-- Destination Name -->
+        <div class="form-group">
+          <label for="destination-name">Destination Name</label>
+          <input type="text" id="destination-name" placeholder="Enter destination name" required>
+        </div>
+
+        <!-- Package Name -->
+        <div class="form-group">
+          <label for="package-name">Package Name</label>
+          <input type="text" id="package-name" placeholder="Enter package name" required>
+        </div>
+
+        <!-- Budget -->
+        <div class="form-group">
+          <label for="budget">Budget</label>
+          <input type="number" id="budget" placeholder="Enter budget" required>
+        </div>
+
+        <!-- Package Description -->
+        <div class="form-group">
+          <label for="description">Package Description</label>
+          <textarea id="description" placeholder="Enter package details" required></textarea>
+        </div>
+
+        <!-- Add Destination Button -->
+        <button id="add-destination-btn">Add Destination</button>
+      </section>
+
+      <!-- Display Added Destinations -->
+      <section id="added-destinations" class="section">
+        <h3>My Destinations</h3>
+        <div class="destination-list">
+          <!-- Dynamic content will be added here -->
+        </div>
+      </section>
+    </div>
+  </div>
+
+ <script src="script.js" type="module"></script>
+
+</body>
+</html>
